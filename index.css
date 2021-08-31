@@ -1,0 +1,262 @@
+*{
+	margin: 8px;
+	padding:0;
+}
+html{
+	font-size: 100%;
+	
+}
+body{
+	background-color:#FFFFF7;
+  font-family: 'Rajdhani', sans-serif;
+
+}
+header{
+
+ margin:auto;
+background-color:white;
+ background-size: 50%;
+  padding: 1px;
+  
+  }
+
+h2{
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 26px;
+  }
+
+
+}
+h3{
+   font-size: 48px;
+  text-transform:uppercase;
+  text-align:center;
+  font-style: oblique;
+  word-spacing: 5px; 
+  color:blue;
+}
+p{ font-size: 20px;
+  color: grey;
+  text-align: justify;
+  text-transform: lowercase;
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 25px;
+   box-shadow:25px 10px 10px;
+
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+  border-radius: 25px;
+}
+footer{
+  text-align: center;
+  text-transform: lowercase;
+  color:grey;
+  background-color: #7B96B8 ;
+  color:black;
+}
+iframe{
+  border-radius: 25px;
+  
+}
+div.caja{
+  display: flex;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: red;
+  border: 10px solid transparent;
+  padding: 15px;
+  box-shadow:5px 5px 6px 6px;
+
+
+}
+
+
+
+
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color:  #FFFF00;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur 0.7s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px black;
+  text-shadow: currentColor;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px black,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+ h1{
+  font-size: 55px;
+  text-align: center;
+  text-shadow: 30px;
+  padding-top: 25px;
+  }
+ .d-block{
+  width: auto;
+  height: 520px;
+  border-radius: 2px;
+  border-style: solid;
+  margin:5px;
+ }
+ .formulario{
+  text-align-last: left;
+ }
+ .eror{
+  display: block;
+  border-style: solid;
+ }
+ .principal{ text-shadow: 15px;
+  font-size: 25px;
+  color: 
+
+ }
+ #lista2 {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font: 15px;
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    
+}
+
+#lista2 ol {
+    margin: 0 0 0 2em; 
+
+}
+
+#lista2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+
+#lista2 li:hover{
+    background: #eee;
+}
+
+#lista2 li:hover:before{
+    transform: rotate(360deg);  
+}
+
+#lista2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
