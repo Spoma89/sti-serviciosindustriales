@@ -7,7 +7,7 @@ html{
 	
 }
 body{
-	background-color:#FFFFF7;
+	background-color:black;
   font-family: 'Rajdhani', sans-serif;
 
 }
@@ -64,7 +64,7 @@ footer{
   text-transform: lowercase;
   color:grey;
   background-color: #7B96B8 ;
-  color:black;
+  color:grey;
 }
 iframe{
   border-radius: 25px;
